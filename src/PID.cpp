@@ -29,7 +29,7 @@ void PID::UpdateError(double cte) {
   p_error = cte;
 
   // Limit integral error
-  i_error = std::fmin(std::fmax(-50, i_error), 50);
+  i_error = std::fmin(std::fmax(-100, i_error), 100);
 }
 
 double PID::TotalError() {
