@@ -42,7 +42,7 @@ int main()
   //pid.Init(0.08, 0, 5);
 
   // Final PID parameters
-  pid.Init(0.08, 0.001, 5);
+  pid.Init(0.08, 0.002, 5);
 
   // Display chosen parameter set
   std::cout << "PID Parameters: Kp = " << pid.Kp << ", Ki = " << pid.Ki << ", Kd = " << pid.Kd << std::endl;
@@ -70,7 +70,7 @@ int main()
           * another PID controller to control the speed!
           */
           pid.UpdateError(cte);
-          std::cout << "Errors: p_error = " << pid.p_error << ", i_error = " << pid.i_error << ", d_error = " << pid.d_error << std::endl;
+          //std::cout << "Errors: p_error = " << pid.p_error << ", i_error = " << pid.i_error << ", d_error = " << pid.d_error << std::endl;
           
           // NOTE: We scale the PID control by the current vehicle speed
           const double min_steer_angle = -1.0;
@@ -84,7 +84,7 @@ int main()
           double throttle = std::fmin(std::fmax(min_throttle, 1 - 0.25 * std::fabs(angle) / max_steer_angle), max_throttle);
 
           // DEBUG
-          std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
+          //std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;

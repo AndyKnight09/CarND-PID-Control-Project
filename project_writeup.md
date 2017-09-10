@@ -44,7 +44,7 @@ Final parameters:
 || PID Parameter || Value ||
 | --- | --- |
 | Proportional Gain | 0.08 |
-| Integral Gain | 0.001 |
+| Integral Gain | 0.002 |
 | Derivative Gain | 5.0 |
 
 ### Simulation
