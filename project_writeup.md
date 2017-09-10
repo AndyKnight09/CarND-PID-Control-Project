@@ -41,7 +41,7 @@ The parameters were chosen by manually tuning performance of the car. First of a
 
 Final parameters:
 
-|| PID Parameter || Value ||
+| PID Parameter | Value |
 | --- | --- |
 | Proportional Gain | 0.08 |
 | Integral Gain | 0.001 |
