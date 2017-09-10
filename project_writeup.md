@@ -37,10 +37,18 @@ The integral term helps to bring the car back onto the centre line of the track 
 
 #### Describe how the final hyperparameters were chosen.
 
-The parameters were chosen by manually tuning performance of the car. First of all I chose a proportional gain that provided a nice oscillating trajectory (see [video 1](./videos/Proportional controller.mp4)). I then tuned the derivative gain to damp the oscillation (see [video 2](./videos/Proportional and Derivative controller.mp4)). I then increased the integral gain until performance started to osciallate again and then reduced it slightly (see [video 3](./videos/PID controller.mp4)). Finally I added a proportional gain control of the throttle to give the final result (see [video 4](./videos/PID controller with throttle control.mp4)).
+The parameters were chosen by manually tuning performance of the car. First of all I chose a proportional gain that provided a nice oscillating trajectory (see [video 1](./videos/Proportional%20controller.mp4)). I then tuned the derivative gain to damp the oscillation (see [video 2](./videos/Proportional%20and%20Derivative%20controller.mp4)). I then increased the integral gain until performance started to osciallate again and then reduced it slightly (see [video 3](./videos/PID%20controller.mp4)). Finally I added a proportional gain control of the throttle to give the final result (see [video 4](./videos/PID%20controller%20with%20throttle%20control.mp4)).
+
+Final parameters:
+
+|| PID Parameter || Value ||
+| --- | --- |
+| Proportional Gain | 0.08 |
+| Integral Gain | 0.001 |
+| Derivative Gain | 5.0 |
 
 ### Simulation
 
 #### The vehicle must successfully drive a lap around the track.
 
-The final video shows the car driving successfully around the track (see [video 4](./videos/PID controller with throttle control.mp4)).
+The final video shows the car driving successfully around the track (see [video 4](./videos/PID%20controller%20with%20throttle%20control.mp4)).
